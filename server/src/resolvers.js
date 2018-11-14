@@ -27,11 +27,5 @@ export const resolvers = {
       return (await users.find({}))
     },
   },
-  Mutation: {
-    addUser: (root, args) => {
-      const newChannel = { id: nextId++, name: args.name };
-      users.push(newChannel);
-      return newChannel;
-    },
-  },
+  
 };
